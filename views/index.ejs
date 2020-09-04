@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p id="hao">Welcome to <%= title %></p>
+    <a id="users">用户</a>
+    <div id="about">about</div>
+    <script>
+      document.getElementById('users').onclick= function(){
+        console.log('users')
+        window.location.href = "/users";
+      };
+      document.getElementById('about').onclick = function(){
+        console.log('about')
+        window.location.href = '/about';
+      }
+	  
+
+    </script>
+  </body>
+</html>
